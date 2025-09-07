@@ -79,6 +79,8 @@ public:
     string getColor() {
         return currState -> getColor();
     }
+
+    virtual ~TrafficLightContext() {}
 };
 
 void RedState::next(TrafficLightContext* context) {
