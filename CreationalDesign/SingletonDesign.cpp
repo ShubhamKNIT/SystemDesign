@@ -3,9 +3,13 @@
 #include <string>
 #include <mutex>
 #include <thread>
+#include <chrono>
+#include <exception>
+#include <memory>
 using namespace std;
 
 /* 
+    Why Singleton Design Pattern?
     Multiple instances should be avoided for 
     DB connection, Logging, Checkpointing, etc 
     Only one of the each instance can manage all applications 

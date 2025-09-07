@@ -1,6 +1,19 @@
 #include <iostream>
 #include <string>
+#include <exception>
+#include <memory>
 using namespace std;
+
+/* 
+    Why Builder Design Pattern?
+    In a car manufacturing system, we may have different configurations
+    for cars like engine type, number of wheels, color, seats, sunroof, etc.
+
+    Instead of creating multiple constructors or using complex initialization
+    logic, we can use the Builder Design Pattern to construct car objects
+    step by step. This approach adheres to the Single Responsibility Principle,
+    allowing us to separate the construction logic from the car representation.
+*/
 
 class Car {
 public:

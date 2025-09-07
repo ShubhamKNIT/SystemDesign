@@ -1,6 +1,19 @@
 #include <iostream>
 #include <exception>
+#include <memory>
+#include <string>
 using namespace std;
+
+/* 
+    Why Prototype Design Pattern?
+    In a game, we may have a default character template
+    and we want to create multiple characters based on this template
+    with slight variations like different names, health, attack power, etc.
+
+    Instead of creating each character from scratch,
+    we can clone the prototype character and modify the necessary attributes.
+    This approach is efficient and adheres to the DRY (Don't Repeat Yourself) principle.
+*/
 
 class Character {
 private:

@@ -1,6 +1,21 @@
 #include <iostream>
 #include <exception>
+#include <memory>
+#include <vector>
+#include <string>
 using namespace std;
+
+/*
+    Why Factory Design Pattern?
+    In a vehicle manufacturing system, we may have different types of vehicles
+    like Car, Bike, Truck, etc. Each vehicle type has its own implementation
+    for starting, moving, and stopping.
+
+    Instead of using if-else or switch-case statements to create instances
+    of different vehicle types, we can use the Factory Design Pattern.
+    This approach adheres to the Open/Closed Principle, allowing us to add
+    new vehicle types without modifying existing code.
+*/
 
 class Vehicle {
 public:
